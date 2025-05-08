@@ -1,0 +1,14 @@
+D:\Study\TestTasks\TestTask_byndyusoft\Program\bin\Debug\net9.0\Program.exe
+D:\Study\TestTasks\TestTask_byndyusoft\Program\bin\Debug\net9.0\Program.deps.json
+D:\Study\TestTasks\TestTask_byndyusoft\Program\bin\Debug\net9.0\Program.runtimeconfig.json
+D:\Study\TestTasks\TestTask_byndyusoft\Program\bin\Debug\net9.0\Program.dll
+D:\Study\TestTasks\TestTask_byndyusoft\Program\bin\Debug\net9.0\Program.pdb
+D:\Study\TestTasks\TestTask_byndyusoft\Program\obj\Debug\net9.0\Program.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\TestTasks\TestTask_byndyusoft\Program\obj\Debug\net9.0\Program.AssemblyInfoInputs.cache
+D:\Study\TestTasks\TestTask_byndyusoft\Program\obj\Debug\net9.0\Program.AssemblyInfo.cs
+D:\Study\TestTasks\TestTask_byndyusoft\Program\obj\Debug\net9.0\Program.csproj.CoreCompileInputs.cache
+D:\Study\TestTasks\TestTask_byndyusoft\Program\obj\Debug\net9.0\Program.dll
+D:\Study\TestTasks\TestTask_byndyusoft\Program\obj\Debug\net9.0\refint\Program.dll
+D:\Study\TestTasks\TestTask_byndyusoft\Program\obj\Debug\net9.0\Program.pdb
+D:\Study\TestTasks\TestTask_byndyusoft\Program\obj\Debug\net9.0\Program.genruntimeconfig.cache
+D:\Study\TestTasks\TestTask_byndyusoft\Program\obj\Debug\net9.0\ref\Program.dll

@@ -1,7 +1,7 @@
 namespace Program;
 public class SumOfTwoMinimalNumbers
 {
-    public int Calculate(List<int> numbers)
+    public int Calculate(List<int>? numbers)
     {
         if (numbers == null)
         {

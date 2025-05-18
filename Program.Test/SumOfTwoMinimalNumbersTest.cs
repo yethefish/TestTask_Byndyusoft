@@ -17,9 +17,9 @@ public class SumOfTwoMinimalNumbersTest
     public void Program_SumOfTwoMinimalNumbersWithNull_ThrowsArgumentNullException()
     {
         var sumOfTwoMinimalNumbers = new SumOfTwoMinimalNumbers();
-        List<int> list = null;
+        List<int>? list = null;
 
-        Action action = () => sumOfTwoMinimalNumbers.Calculate(null);
+        Action action = () => sumOfTwoMinimalNumbers.Calculate(list);
         ArgumentNullException exception = Assert.Throws<ArgumentNullException>(action);
 
         Assert.Equal("Array cannot be null", exception.ParamName);

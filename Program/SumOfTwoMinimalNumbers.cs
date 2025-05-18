@@ -1,4 +1,5 @@
 namespace Program;
+
 public class SumOfTwoMinimalNumbers
 {
     public int Calculate(List<int>? numbers)
@@ -10,10 +11,6 @@ public class SumOfTwoMinimalNumbers
         else if (numbers.Count <= 1)
         {
             throw new ArgumentException("Not enough numbers in array");
-        }
-        else if (numbers.Count >= 100_000_000)
-        {
-            throw new ArgumentOutOfRangeException("Array is too big");
         }
 
         int firstMin = int.MaxValue, secondMin = int.MaxValue;

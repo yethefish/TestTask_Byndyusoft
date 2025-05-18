@@ -26,17 +26,6 @@ public class SumOfTwoMinimalNumbersTest
     }
 
     [Fact]
-    public void Program_SumOfTwoMinimalNumbersWithBigList_ThrowsArgumentOutOfRangeException()
-    {
-        var sumOfTwoMinimalNumbers = new SumOfTwoMinimalNumbers();
-
-        Action action = () => sumOfTwoMinimalNumbers.Calculate(new List<int>(new int[100_000_000]));
-        ArgumentOutOfRangeException exception = Assert.Throws<ArgumentOutOfRangeException>(action);
-
-        Assert.Equal("Array is too big", exception.ParamName);
-    }
-
-    [Fact]
     public void Program_SumOfTwoMinimalNumbersWithIntMaxValues_ThrowsOverflowException()
     {
         var sumOfTwoMinimalNumbers = new SumOfTwoMinimalNumbers();

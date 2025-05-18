@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-namespace Program;
+﻿namespace Program;
 public class Program
 {
     static void Main(string[] args)

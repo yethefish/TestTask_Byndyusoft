@@ -1,13 +1,13 @@
 namespace Program.Test;
 
-public class ProgramTest
+public class SumOfTwoMinimalNumbersTest
 {
     [Fact]
     public void Program_SumOfTwoMinimalNumbersWithEmptyList_ThrowsArgumentException()
     {
-        var program = new Program();
+        var sumOfTwoMinimalNumbers = new SumOfTwoMinimalNumbers();
 
-        Action action = () => program.SumOfTwoMinimalNumbers(new List<int>(100));
+        Action action = () => sumOfTwoMinimalNumbers.Calculate(new List<int>(100));
         ArgumentException exception = Assert.Throws<ArgumentException>(action);
 
         Assert.Equal("Not enough numbers in array", exception.Message);
@@ -16,10 +16,10 @@ public class ProgramTest
     [Fact]
     public void Program_SumOfTwoMinimalNumbersWithNull_ThrowsArgumentNullException()
     {
-        var program = new Program();
+        var sumOfTwoMinimalNumbers = new SumOfTwoMinimalNumbers();
         List<int> list = null;
 
-        Action action = () => program.SumOfTwoMinimalNumbers(null);
+        Action action = () => sumOfTwoMinimalNumbers.Calculate(null);
         ArgumentNullException exception = Assert.Throws<ArgumentNullException>(action);
 
         Assert.Equal("Array cannot be null", exception.ParamName);
@@ -28,9 +28,9 @@ public class ProgramTest
     [Fact]
     public void Program_SumOfTwoMinimalNumbersWithBigList_ThrowsArgumentOutOfRangeException()
     {
-        var program = new Program();
+        var sumOfTwoMinimalNumbers = new SumOfTwoMinimalNumbers();
 
-        Action action = () => program.SumOfTwoMinimalNumbers(new List<int>(new int[100_000_000]));
+        Action action = () => sumOfTwoMinimalNumbers.Calculate(new List<int>(new int[100_000_000]));
         ArgumentOutOfRangeException exception = Assert.Throws<ArgumentOutOfRangeException>(action);
 
         Assert.Equal("Array is too big", exception.ParamName);
@@ -39,11 +39,11 @@ public class ProgramTest
     [Fact]
     public void Program_SumOfTwoMinimalNumbersWithIntMaxValues_ThrowsOverflowException()
     {
-        var program = new Program();
+        var sumOfTwoMinimalNumbers = new SumOfTwoMinimalNumbers();
         var testData = new List<int>([int.MinValue, -10]);
         var exceptionType = typeof(OverflowException);
 
-        Action action = () => program.SumOfTwoMinimalNumbers(testData);
+        Action action = () => sumOfTwoMinimalNumbers.Calculate(testData);
         
         Assert.Throws(exceptionType, action);
     }
@@ -52,9 +52,9 @@ public class ProgramTest
     [MemberData(nameof(GetTestData))]
     public void Program_SumOfTwoMinimalNumbersWithCorrectData_ReturnInt(List<int> arr, int expectedResult)
     {
-        var program = new Program();
+        var sumOfTwoMinimalNumbers = new SumOfTwoMinimalNumbers();
 
-        int result = program.SumOfTwoMinimalNumbers(arr);
+        int result = sumOfTwoMinimalNumbers.Calculate(arr);
 
         Assert.Equal(expectedResult, result);
     }

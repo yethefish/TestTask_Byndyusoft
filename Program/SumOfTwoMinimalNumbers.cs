@@ -17,14 +17,12 @@ public class SumOfTwoMinimalNumbers
 
         foreach (int number in numbers)
         {
-            if (firstMin > number)
+            secondMin = Math.Min(secondMin, number);
+            
+            if (firstMin >= number)
             {
                 secondMin = firstMin;
                 firstMin = number;
-            }
-            else if (secondMin > number && firstMin <= number)
-            {
-                secondMin = number;
             }
         }
 

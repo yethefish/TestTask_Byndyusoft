@@ -41,12 +41,11 @@ public class ProgramTest
     {
         var program = new Program();
         var testData = new List<int>([int.MinValue, -10]);
-
+        var exceptionType = typeof(OverflowException);
 
         Action action = () => program.SumOfTwoMinimalNumbers(testData);
-        OverflowException exception = Assert.Throws<OverflowException>(action);
-
-        Assert.Equal("Sum of two minimal numbers resulted in an overflow", exception.Message);
+        
+        Assert.Throws(exceptionType, action);
     }
 
     [Theory]

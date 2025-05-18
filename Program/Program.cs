@@ -33,16 +33,9 @@ public class Program
             }
         }
 
-        try
+        checked
         {
-            checked
-            {
-                return firstMin + secondMin;
-            }
-        }
-        catch
-        {
-            throw new OverflowException("Sum of two minimal numbers resulted in an overflow");
+            return firstMin + secondMin;
         }
     }
     
